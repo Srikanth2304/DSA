@@ -24,7 +24,7 @@ public:
             temp2 = temp2->next;
         }
         ListNode * temp1 = head;
-        while(temp1->next != temp2){
+        while(temp1->next != nullptr and temp1->next != temp2){
             temp1 = temp1->next;
         }
         temp1->next = temp1->next->next;
@@ -35,5 +35,5 @@ public:
 
 
 
-Line 27: Char 22: runtime error: member access within null pointer of type 'ListNode' (solution.cpp)
-SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior prog_joined.cpp:36:22
+Line 30: Char 36: runtime error: member access within null pointer of type 'ListNode' (solution.cpp)
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior prog_joined.cpp:39:36
